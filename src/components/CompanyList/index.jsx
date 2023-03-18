@@ -22,18 +22,20 @@ const peticion= async()=>{
 }
 
 useEffect(()=>{
-    
     peticion();
 },[]);
 
 return(
     <>
-        <h1>Empresas Registradas</h1>
-        <div className='col mb-4'>
-        {   companies.map((company)=>(
-            <ListaCompany company={company} key={company.id}/>
-        ))}
+        <div className='container my-2'>
+            <h1>Empresas Registradas</h1>
+            <div className='row'>
+            {   companies.map((company)=>(
+                <ListaCompany company={company} key={company.id} peticion={peticion}/>
+            ))}
+            </div>
         </div>
+        
     </>
 )
     
