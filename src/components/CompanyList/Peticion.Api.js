@@ -1,5 +1,7 @@
 
-const API_KEY = "http://127.0.0.1:8000/api/company/"
+// const API_KEY = "http://127.0.0.1:8000/api/company/"
+
+const API_KEY = "https://api-company-17qc.onrender.com/api/company/"
 
 export const Peticion_Api = async() => {
 
